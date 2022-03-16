@@ -50,7 +50,7 @@ public class GoogleSearchTest {
         WebDriverManager.chromedriver().setup();
          WebDriver driver =new ChromeDriver();
          driver.findElement (By.name("q"));
-         
+         driver.findElement (By.name("r"));
 
     }
 }
