@@ -95,5 +95,7 @@ public class CreateUserAccount {
     driver.findElement(By.name("postal_codeRegisterPage")).sendKeys("60504");
     driver.findElement(By.name("i_agree")).click();
     driver.findElement(By.id("register_btnundefined")).click();
+    
+    
   }
 }
