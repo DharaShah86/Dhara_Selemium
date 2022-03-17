@@ -5,6 +5,7 @@
 package com.sel.test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,22 +21,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * @author shahs
  */
 public class GoogleSearchTest {
-    
+
     public GoogleSearchTest() {
     }
-    
+
     @BeforeAll
     public static void setUpClass() {
     }
-    
+
     @AfterAll
     public static void tearDownClass() {
     }
-    
+
     @BeforeEach
     public void setUp() {
     }
-    
+
     @AfterEach
     public void tearDown() {
     }
@@ -46,11 +47,12 @@ public class GoogleSearchTest {
     // @Test
     // public void hello() {}
     @Test
-    public void testsearch(){
+    public void testsearch() {
         WebDriverManager.chromedriver().setup();
-         WebDriver driver =new ChromeDriver();
-         driver.findElement (By.name("q"));
-         driver.findElement (By.name("r"));
+        WebDriver driver = new ChromeDriver();
+      
+        driver.findElement(By.name("q"));
+      
 
     }
 }
