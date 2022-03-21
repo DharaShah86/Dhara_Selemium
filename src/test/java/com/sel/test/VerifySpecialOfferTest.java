@@ -53,6 +53,7 @@ public class VerifySpecialOfferTest {
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100)); 
   
     driver.get("https://www.advantageonlineshopping.com/#/");
+    /*driver.findElement(By.linkText("SPECIAL OFFER")).click();
    /* driver.findElement(By.linkText("SPECIAL OFFER")).click();
     driver.findElement(By.id("see_offer_btn")).click();
     driver.findElement(By.xpath("//div[@id='productProperties']/div/div[2]")).click();
@@ -73,8 +74,8 @@ public class VerifySpecialOfferTest {
     driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div")).click();
     driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div")).click();
     driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div")).click();
-    driver.findElement(By.name("save_to_cart")).click();
-*/
+    driver.findElement(By.name("save_to_cart")).click();*/
+
   }
       }
 
