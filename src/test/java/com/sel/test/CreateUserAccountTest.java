@@ -24,9 +24,9 @@ import org.openqa.selenium.support.ui.Select;
  *
  * @author shahs
  */
-public class CreateUserAccount {
+public class CreateUserAccountTest {
     
-    public CreateUserAccount() {
+    public CreateUserAccountTest() {
     }
     
     @BeforeAll
