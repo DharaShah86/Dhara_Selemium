@@ -7,19 +7,23 @@ package com.sel.test;
 import static com.github.dockerjava.transport.DomainSocket.get;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.time.Duration;
-import org.junit.jupiter.api.AfterEach;
+/*import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+*/
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
-
-
 
 /**
  *
