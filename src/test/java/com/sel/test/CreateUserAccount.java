@@ -14,12 +14,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 */
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,19 +29,19 @@ public class CreateUserAccount {
     public CreateUserAccount() {
     }
     
-    @BeforeAll
+    //@BeforeAll
     public static void setUpClass() {
     }
     
-    @AfterAll
+    //@AfterAll
     public static void tearDownClass() {
     }
     
-    @BeforeEach
+    //@BeforeEach
     public void setUp() {
     }
     
-    @AfterEach
+    //@AfterEach
     public void tearDown() {
     }
 
