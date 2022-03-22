@@ -51,7 +51,7 @@ public class CreateUserAccount {
     // @Test
     // public void hello() {}
     
-    @Test
+    //@Test
    public void testCreateUser() throws Exception {
     WebDriverManager.chromedriver().setup();
     WebDriver driver =new ChromeDriver();
