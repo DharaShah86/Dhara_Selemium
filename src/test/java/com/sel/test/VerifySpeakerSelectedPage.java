@@ -64,7 +64,5 @@ public class VerifySpeakerSelectedPage {
     driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div")).click();
     driver.findElement(By.name("save_to_cart")).click();
   }
-/*testing by shyamal*/
-
-     }
+}
 
