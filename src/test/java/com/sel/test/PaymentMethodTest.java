@@ -20,9 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author shahs
  */
-public class PaymentMethod {
+public class PaymentMethodTest {
     
-    public PaymentMethod() {
+    public PaymentMethodTest() {
     }
     
     @BeforeAll

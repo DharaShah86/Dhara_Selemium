@@ -20,9 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author shahs
  */
-public class VerifyDetailOfSpeakerPage {
+public class VerifyDetailOfSpeakerPageTest {
     
-    public VerifyDetailOfSpeakerPage() {
+    public VerifyDetailOfSpeakerPageTest() {
     }
     
     @BeforeAll

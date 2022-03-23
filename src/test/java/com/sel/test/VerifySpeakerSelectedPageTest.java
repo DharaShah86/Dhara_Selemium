@@ -20,9 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author shahs
  */
-public class VerifySelectedHeadphonePage {
+public class VerifySpeakerSelectedPageTest {
     
-    public VerifySelectedHeadphonePage() {
+    public VerifySpeakerSelectedPageTest() {
     }
     
     @BeforeAll
@@ -45,21 +45,24 @@ public class VerifySelectedHeadphonePage {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void testVerifySelectedHeadphone() throws Exception {
-        
-     WebDriverManager.chromedriver().setup();
-     WebDriver driver =new ChromeDriver();
+    public void testVerifySelectedSpeakerPage() throws Exception {
+    WebDriverManager.chromedriver().setup();
+    WebDriver driver =new ChromeDriver();
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-   //driver.wait(10000);
-     driver.get("https://www.advantageonlineshopping.com/#/category/Headphones/2");
-    driver.findElement(By.id("12")).click();
-    driver.get("https://www.advantageonlineshopping.com/#/product/12");
-    driver.findElement(By.xpath("//div[@id='productProperties']/div/div/span[4]")).click();
+    driver.get("https://www.advantageonlineshopping.com/#/category/Speakers/4");
+    driver.findElement(By.id("24")).click();
+    driver.get("https://www.advantageonlineshopping.com/#/product/24");
+    driver.findElement(By.xpath("//div[@id='productProperties']/div/div[2]/span[2]")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div/div[2]/span[3]")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div/div[2]/span[4]")).click();
     driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div[3]")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div[3]")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div[3]")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div")).click();
     driver.findElement(By.name("save_to_cart")).click();
   }
 }
-  
-
 

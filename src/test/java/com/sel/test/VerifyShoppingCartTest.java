@@ -20,9 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author shahs
  */
-public class VerifyShoppingCart {
+public class VerifyShoppingCartTest {
     
-    public VerifyShoppingCart() {
+    public VerifyShoppingCartTest() {
     }
     
     @BeforeAll

@@ -20,9 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author shahs
  */
-public class VerifySoldOutHeadphonesPage {
+public class VerifySelectedHeadphonePageTest {
     
-    public VerifySoldOutHeadphonesPage() {
+    public VerifySelectedHeadphonePageTest() {
     }
     
     @BeforeAll
@@ -45,17 +45,21 @@ public class VerifySoldOutHeadphonesPage {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-     public void testVerifySoldOutHeadphonePage() throws Exception {
+    public void testVerifySelectedHeadphone() throws Exception {
+        
      WebDriverManager.chromedriver().setup();
      WebDriver driver =new ChromeDriver();
-     driver.manage().window().maximize();
-     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-     driver.get("https://www.advantageonlineshopping.com/#/category/Headphone/2");
-     driver.findElement(By.linkText("Bose SoundLink Around-ear Wireless Headphones II")).click();
-     driver.get("https://www.advantageonlineshopping.com/#/product/13");
-     driver.findElement(By.xpath("//div[@id='Description']/h2/span")).click();
-     driver.findElement(By.xpath("//div[@id='productProperties']/div/e-sec-plus-minus")).click();
-     driver.findElement(By.name("save_to_cart")).click();
-     }
+    driver.manage().window().maximize();
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+   //driver.wait(10000);
+     driver.get("https://www.advantageonlineshopping.com/#/category/Headphones/2");
+    driver.findElement(By.id("12")).click();
+    driver.get("https://www.advantageonlineshopping.com/#/product/12");
+    driver.findElement(By.xpath("//div[@id='productProperties']/div/div/span[4]")).click();
+    driver.findElement(By.xpath("//div[@id='productProperties']/div[2]/e-sec-plus-minus/div/div[3]")).click();
+    driver.findElement(By.name("save_to_cart")).click();
+  }
 }
+  
+
 

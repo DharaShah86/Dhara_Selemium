@@ -20,9 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author shahs
  */
-public class VerifyAvailableHeadphonePage {
+public class VerifyAvailableHeadphonePageTest {
     
-    public VerifyAvailableHeadphonePage() {
+    public VerifyAvailableHeadphonePageTest() {
     }
     
     @BeforeAll
